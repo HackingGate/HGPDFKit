@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		760B0C6D2185747800D72E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0C6C2185747800D72E95 /* AppDelegate.swift */; };
+		760B0C722185747800D72E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760B0C702185747800D72E95 /* Main.storyboard */; };
+		760B0C742185747A00D72E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760B0C732185747A00D72E95 /* Assets.xcassets */; };
+		760B0C772185747A00D72E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760B0C752185747A00D72E95 /* LaunchScreen.storyboard */; };
+		760B0C7F21857A6700D72E95 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 760B0C7E21857A6700D72E95 /* README.md */; };
+		760B0C8221857AB200D72E95 /* PDFView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0C8121857AB200D72E95 /* PDFView+Extension.swift */; };
+		760B0C8421857C2200D72E95 /* BookshelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0C8321857C2200D72E95 /* BookshelfViewController.swift */; };
+		760B0C8721857CDD00D72E95 /* BookshelfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0C8521857CDD00D72E95 /* BookshelfCell.swift */; };
+		760B0C8A21857FD300D72E95 /* wagahaiwa_nekodearu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 760B0C8921857FD300D72E95 /* wagahaiwa_nekodearu.pdf */; };
+		760B0C8C2185813000D72E95 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0C8B2185813000D72E95 /* BookViewController.swift */; };
+		7646D6E82185A9DF00D5D3B3 /* PDFView+ScaleFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646D6E52185A9DE00D5D3B3 /* PDFView+ScaleFactor.swift */; };
+		7646D6E92185A9DF00D5D3B3 /* PDFView+RTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646D6E62185A9DE00D5D3B3 /* PDFView+RTL.swift */; };
+		7646D6EA2185A9DF00D5D3B3 /* PDFView+Zoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646D6E72185A9DF00D5D3B3 /* PDFView+Zoom.swift */; };
+		7646D6F82185B37000D5D3B3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646D6F72185B37000D5D3B3 /* UIView+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		760B0C692185747800D72E95 /* HGPDFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGPDFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		760B0C6C2185747800D72E95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		760B0C712185747800D72E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		760B0C732185747A00D72E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		760B0C762185747A00D72E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		760B0C782185747A00D72E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760B0C7E21857A6700D72E95 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		760B0C8121857AB200D72E95 /* PDFView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PDFView+Extension.swift"; path = "../../../Source/PDFView+Extension.swift"; sourceTree = "<group>"; };
+		760B0C8321857C2200D72E95 /* BookshelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookshelfViewController.swift; sourceTree = "<group>"; };
+		760B0C8521857CDD00D72E95 /* BookshelfCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookshelfCell.swift; sourceTree = "<group>"; };
+		760B0C8921857FD300D72E95 /* wagahaiwa_nekodearu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wagahaiwa_nekodearu.pdf; sourceTree = "<group>"; };
+		760B0C8B2185813000D72E95 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		7646D6E52185A9DE00D5D3B3 /* PDFView+ScaleFactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PDFView+ScaleFactor.swift"; path = "../../../Source/PDFView+ScaleFactor.swift"; sourceTree = "<group>"; };
+		7646D6E62185A9DE00D5D3B3 /* PDFView+RTL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PDFView+RTL.swift"; path = "../../../Source/PDFView+RTL.swift"; sourceTree = "<group>"; };
+		7646D6E72185A9DF00D5D3B3 /* PDFView+Zoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PDFView+Zoom.swift"; path = "../../../Source/PDFView+Zoom.swift"; sourceTree = "<group>"; };
+		7646D6F72185B37000D5D3B3 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "../../../Source/UIView+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		760B0C662185747800D72E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		760B0C602185747800D72E95 = {
+			isa = PBXGroup;
+			children = (
+				760B0C7E21857A6700D72E95 /* README.md */,
+				760B0C6B2185747800D72E95 /* HGPDFKit */,
+				760B0C6A2185747800D72E95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		760B0C6A2185747800D72E95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				760B0C692185747800D72E95 /* HGPDFKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		760B0C6B2185747800D72E95 /* HGPDFKit */ = {
+			isa = PBXGroup;
+			children = (
+				760B0C8021857A7D00D72E95 /* HGPDFKit */,
+				760B0C6C2185747800D72E95 /* AppDelegate.swift */,
+				760B0C8321857C2200D72E95 /* BookshelfViewController.swift */,
+				760B0C8521857CDD00D72E95 /* BookshelfCell.swift */,
+				760B0C8B2185813000D72E95 /* BookViewController.swift */,
+				760B0C702185747800D72E95 /* Main.storyboard */,
+				760B0C732185747A00D72E95 /* Assets.xcassets */,
+				760B0C752185747A00D72E95 /* LaunchScreen.storyboard */,
+				760B0C782185747A00D72E95 /* Info.plist */,
+				760B0C8921857FD300D72E95 /* wagahaiwa_nekodearu.pdf */,
+			);
+			path = HGPDFKit;
+			sourceTree = "<group>";
+		};
+		760B0C8021857A7D00D72E95 /* HGPDFKit */ = {
+			isa = PBXGroup;
+			children = (
+				760B0C8121857AB200D72E95 /* PDFView+Extension.swift */,
+				7646D6E52185A9DE00D5D3B3 /* PDFView+ScaleFactor.swift */,
+				7646D6E72185A9DF00D5D3B3 /* PDFView+Zoom.swift */,
+				7646D6E62185A9DE00D5D3B3 /* PDFView+RTL.swift */,
+				7646D6F72185B37000D5D3B3 /* UIView+Extension.swift */,
+			);
+			path = HGPDFKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		760B0C682185747800D72E95 /* HGPDFKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 760B0C7B2185747A00D72E95 /* Build configuration list for PBXNativeTarget "HGPDFKit" */;
+			buildPhases = (
+				760B0C652185747800D72E95 /* Sources */,
+				760B0C662185747800D72E95 /* Frameworks */,
+				760B0C672185747800D72E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HGPDFKit;
+			productName = HGPDFKit;
+			productReference = 760B0C692185747800D72E95 /* HGPDFKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		760B0C612185747800D72E95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = HackingGate;
+				TargetAttributes = {
+					760B0C682185747800D72E95 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 760B0C642185747800D72E95 /* Build configuration list for PBXProject "HGPDFKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 760B0C602185747800D72E95;
+			productRefGroup = 760B0C6A2185747800D72E95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				760B0C682185747800D72E95 /* HGPDFKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		760B0C672185747800D72E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760B0C772185747A00D72E95 /* LaunchScreen.storyboard in Resources */,
+				760B0C8A21857FD300D72E95 /* wagahaiwa_nekodearu.pdf in Resources */,
+				760B0C742185747A00D72E95 /* Assets.xcassets in Resources */,
+				760B0C7F21857A6700D72E95 /* README.md in Resources */,
+				760B0C722185747800D72E95 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		760B0C652185747800D72E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760B0C8421857C2200D72E95 /* BookshelfViewController.swift in Sources */,
+				760B0C6D2185747800D72E95 /* AppDelegate.swift in Sources */,
+				7646D6EA2185A9DF00D5D3B3 /* PDFView+Zoom.swift in Sources */,
+				760B0C8C2185813000D72E95 /* BookViewController.swift in Sources */,
+				7646D6E82185A9DF00D5D3B3 /* PDFView+ScaleFactor.swift in Sources */,
+				7646D6E92185A9DF00D5D3B3 /* PDFView+RTL.swift in Sources */,
+				760B0C8221857AB200D72E95 /* PDFView+Extension.swift in Sources */,
+				7646D6F82185B37000D5D3B3 /* UIView+Extension.swift in Sources */,
+				760B0C8721857CDD00D72E95 /* BookshelfCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		760B0C702185747800D72E95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				760B0C712185747800D72E95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		760B0C752185747A00D72E95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				760B0C762185747A00D72E95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		760B0C792185747A00D72E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		760B0C7A2185747A00D72E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		760B0C7C2185747A00D72E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77CB32R5F4;
+				INFOPLIST_FILE = HGPDFKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackinggate.HGPDFKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		760B0C7D2185747A00D72E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77CB32R5F4;
+				INFOPLIST_FILE = HGPDFKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackinggate.HGPDFKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		760B0C642185747800D72E95 /* Build configuration list for PBXProject "HGPDFKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760B0C792185747A00D72E95 /* Debug */,
+				760B0C7A2185747A00D72E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		760B0C7B2185747A00D72E95 /* Build configuration list for PBXNativeTarget "HGPDFKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760B0C7C2185747A00D72E95 /* Debug */,
+				760B0C7D2185747A00D72E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 760B0C612185747800D72E95 /* Project object */;
+}
