@@ -10,7 +10,7 @@ import PDFKit
 
 extension PDFView {
     // if allowsDocumentAssembly is false, then the value should always be false
-    var isViewTransformedForRTL: Bool {
+    public var isViewTransformedForRTL: Bool {
         get {
             if self.scrollView?.transform == CGAffineTransform(rotationAngle: .pi),
                 self.document?.page(at: 0)?.rotation == 180 {
@@ -21,7 +21,7 @@ extension PDFView {
         }
     }
     
-    func transformViewForRTL(_ transformForRTL: Bool, _ pdfThumbnailView: PDFThumbnailView?) {
+    public func transformViewForRTL(_ transformForRTL: Bool, _ pdfThumbnailView: PDFThumbnailView?) {
         if self.document?.allowsDocumentAssembly == false {
             return
         }

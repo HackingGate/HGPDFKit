@@ -9,15 +9,20 @@
 import PDFKit
 
 // scaleFactor
-struct HGPDFScaleFactor {
+public struct HGPDFScaleFactor {
     // store factor for single mode
-    var portrait: CGFloat
-    var landscape: CGFloat
+    public var portrait: CGFloat
+    public var landscape: CGFloat
     // devide by 2 for two up mode
+    
+    public init(portrait: CGFloat, landscape: CGFloat) {
+        self.portrait = portrait
+        self.landscape = landscape
+    }
 }
 
 extension PDFView {
-    var scrollView: UIScrollView? {
+    public var scrollView: UIScrollView? {
         for view in self.subviews {
             if let scrollView = view as? UIScrollView {
                 return scrollView

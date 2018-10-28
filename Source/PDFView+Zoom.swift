@@ -9,7 +9,7 @@
 import PDFKit
 
 extension PDFView {
-    var isZoomedIn: Bool {
+    public var isZoomedIn: Bool {
         get {
             if self.scaleFactor == self.maxScaleFactor {
                 return true
@@ -19,7 +19,7 @@ extension PDFView {
         }
     }
     
-    func autoZoomInOrOut(location: CGPoint, animated: Bool) {
+    public func autoZoomInOrOut(location: CGPoint, animated: Bool) {
         
         var scaleFactor: CGFloat?
         
