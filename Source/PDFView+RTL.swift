@@ -12,12 +12,23 @@ extension PDFView {
     // if allowsDocumentAssembly is false, then the value should always be false
     public var isViewTransformedForRTL: Bool {
         get {
-            if self.scrollView?.transform == CGAffineTransform(rotationAngle: .pi),
-                self.document?.page(at: 0)?.rotation == 180 {
+            if self.document?.page(at: 0)?.rotation == 180 {
+                if self.scrollView?.transform == CGAffineTransform(rotationAngle: .pi) {
+                    return true
+                }
+                print("HGPDFKit: First page is rotated but ScrollView of PDFView is not transformed. If you are trying to use RTL. Call PDFView.transformScrollViewIfNeededForRTL before calling PDFView.isViewTransformedForRTL or manage RTL transform on your own.")
                 return true
             } else {
                 return false
             }
+        }
+    }
+    
+    /// Call this method when document was transformed previously and the ScrollView transform was reset.
+    /// Call it before calling `PDFView.isViewTransformedForRTL`.
+    public func transformScrollViewIfNeededForRTL() {
+        if self.scrollView?.transform != CGAffineTransform(rotationAngle: .pi), self.document?.page(at: 0)?.rotation == 180 {
+            self.scrollView?.transform = CGAffineTransform(rotationAngle: .pi)
         }
     }
     
@@ -40,7 +51,7 @@ extension PDFView {
                 document.page(at: i)?.rotation = transformForRTL ? 180 : 0
             }
             
-            // if transfrom view for RTL, the thumbnail does not update
+            // if transform view for RTL, the thumbnail does not update
             self.document = nil
             self.document = document
             
