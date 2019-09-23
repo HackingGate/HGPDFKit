@@ -18,6 +18,7 @@ class BookViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setToolbarHidden(false, animated: true)
+        pdfView.transformScrollViewIfNeededForRTL() // Example for implement the fix
         updateReadingDirectionItemTitle()
     }
 
