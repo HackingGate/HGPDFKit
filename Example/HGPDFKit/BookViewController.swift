@@ -80,7 +80,7 @@ class BookViewController: UIViewController {
         readingDirectionItem.title = pdfView.isViewTransformedForRTL ? "RTL" : "LTR"
     }
     
-    @IBAction private func changeReadingDirection(_ sender: Any) {
+    @IBAction private func changeReadingDirection() {
         let pdfThumbnailView = navigationController?.toolbar.viewWithTag(1) as? PDFThumbnailView
 
         pdfView.transformViewForRTL(!pdfView.isViewTransformedForRTL, pdfThumbnailView)
