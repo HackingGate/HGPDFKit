@@ -1,6 +1,6 @@
 //
 //  BookViewController.swift
-//  HGPDFKit
+//  HGPDFKit-Example
 //
 //  Created by ERU on 2018/10/28.
 //  Copyright © 2018 HackingGate. All rights reserved.
@@ -8,6 +8,7 @@
 
 import UIKit
 import PDFKit
+import HGPDFKit
 
 class BookViewController: UIViewController {
     
@@ -44,7 +45,7 @@ class BookViewController: UIViewController {
         
         setPDFThumbnailView()
         
-        // HGPDFKit
+        // HGPDFKit-Example
         pdfView.scrollView?.contentInsetAdjustmentBehavior = .scrollableAxes
         pdfView.getScaleFactorForSizeToFit()
         pdfView.setMinScaleFactorForSizeToFit()

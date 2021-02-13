@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,15 +16,11 @@
 		760B0C8721857CDD00D72E95 /* BookshelfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0C8521857CDD00D72E95 /* BookshelfCell.swift */; };
 		760B0C8A21857FD300D72E95 /* wagahaiwa_nekodearu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 760B0C8921857FD300D72E95 /* wagahaiwa_nekodearu.pdf */; };
 		760B0C8C2185813000D72E95 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0C8B2185813000D72E95 /* BookViewController.swift */; };
-		76D722A92185EC15002FCD8F /* PDFView+ScaleFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D722A42185EC15002FCD8F /* PDFView+ScaleFactor.swift */; };
-		76D722AA2185EC15002FCD8F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D722A52185EC15002FCD8F /* UIView+Extension.swift */; };
-		76D722AB2185EC15002FCD8F /* PDFView+Zoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D722A62185EC15002FCD8F /* PDFView+Zoom.swift */; };
-		76D722AC2185EC15002FCD8F /* PDFView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D722A72185EC15002FCD8F /* PDFView+Extension.swift */; };
-		76D722AD2185EC15002FCD8F /* PDFView+RTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D722A82185EC15002FCD8F /* PDFView+RTL.swift */; };
+		C7FB7AEF25D8264000242801 /* HGPDFKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7FB7AEE25D8264000242801 /* HGPDFKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		760B0C692185747800D72E95 /* HGPDFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGPDFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		760B0C692185747800D72E95 /* HGPDFKit-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HGPDFKit-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		760B0C6C2185747800D72E95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		760B0C712185747800D72E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		760B0C732185747A00D72E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,11 +31,7 @@
 		760B0C8521857CDD00D72E95 /* BookshelfCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookshelfCell.swift; sourceTree = "<group>"; };
 		760B0C8921857FD300D72E95 /* wagahaiwa_nekodearu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wagahaiwa_nekodearu.pdf; sourceTree = "<group>"; };
 		760B0C8B2185813000D72E95 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
-		76D722A42185EC15002FCD8F /* PDFView+ScaleFactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PDFView+ScaleFactor.swift"; path = "../../../Source/PDFView+ScaleFactor.swift"; sourceTree = "<group>"; };
-		76D722A52185EC15002FCD8F /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "../../../Source/UIView+Extension.swift"; sourceTree = "<group>"; };
-		76D722A62185EC15002FCD8F /* PDFView+Zoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PDFView+Zoom.swift"; path = "../../../Source/PDFView+Zoom.swift"; sourceTree = "<group>"; };
-		76D722A72185EC15002FCD8F /* PDFView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PDFView+Extension.swift"; path = "../../../Source/PDFView+Extension.swift"; sourceTree = "<group>"; };
-		76D722A82185EC15002FCD8F /* PDFView+RTL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PDFView+RTL.swift"; path = "../../../Source/PDFView+RTL.swift"; sourceTree = "<group>"; };
+		C7FB7AEB25D825E100242801 /* HGPDFKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HGPDFKit; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FB7AEF25D8264000242801 /* HGPDFKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,23 +50,24 @@
 			isa = PBXGroup;
 			children = (
 				760B0C7E21857A6700D72E95 /* README.md */,
-				760B0C6B2185747800D72E95 /* HGPDFKit */,
+				C7FB7AEB25D825E100242801 /* HGPDFKit */,
+				760B0C6B2185747800D72E95 /* HGPDFKit-Example */,
 				760B0C6A2185747800D72E95 /* Products */,
+				C7FB7AED25D8264000242801 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		760B0C6A2185747800D72E95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				760B0C692185747800D72E95 /* HGPDFKit.app */,
+				760B0C692185747800D72E95 /* HGPDFKit-Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		760B0C6B2185747800D72E95 /* HGPDFKit */ = {
+		760B0C6B2185747800D72E95 /* HGPDFKit-Example */ = {
 			isa = PBXGroup;
 			children = (
-				76D722A32185EC09002FCD8F /* HGPDFKit */,
 				760B0C6C2185747800D72E95 /* AppDelegate.swift */,
 				760B0C8321857C2200D72E95 /* BookshelfViewController.swift */,
 				760B0C8521857CDD00D72E95 /* BookshelfCell.swift */,
@@ -84,27 +78,22 @@
 				760B0C782185747A00D72E95 /* Info.plist */,
 				760B0C8921857FD300D72E95 /* wagahaiwa_nekodearu.pdf */,
 			);
-			path = HGPDFKit;
+			path = "HGPDFKit-Example";
 			sourceTree = "<group>";
 		};
-		76D722A32185EC09002FCD8F /* HGPDFKit */ = {
+		C7FB7AED25D8264000242801 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				76D722A72185EC15002FCD8F /* PDFView+Extension.swift */,
-				76D722A82185EC15002FCD8F /* PDFView+RTL.swift */,
-				76D722A42185EC15002FCD8F /* PDFView+ScaleFactor.swift */,
-				76D722A62185EC15002FCD8F /* PDFView+Zoom.swift */,
-				76D722A52185EC15002FCD8F /* UIView+Extension.swift */,
 			);
-			path = HGPDFKit;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		760B0C682185747800D72E95 /* HGPDFKit */ = {
+		760B0C682185747800D72E95 /* HGPDFKit-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 760B0C7B2185747A00D72E95 /* Build configuration list for PBXNativeTarget "HGPDFKit" */;
+			buildConfigurationList = 760B0C7B2185747A00D72E95 /* Build configuration list for PBXNativeTarget "HGPDFKit-Example" */;
 			buildPhases = (
 				760B0C652185747800D72E95 /* Sources */,
 				760B0C662185747800D72E95 /* Frameworks */,
@@ -114,9 +103,12 @@
 			);
 			dependencies = (
 			);
-			name = HGPDFKit;
-			productName = HGPDFKit;
-			productReference = 760B0C692185747800D72E95 /* HGPDFKit.app */;
+			name = "HGPDFKit-Example";
+			packageProductDependencies = (
+				C7FB7AEE25D8264000242801 /* HGPDFKit */,
+			);
+			productName = "HGPDFKit-Example";
+			productReference = 760B0C692185747800D72E95 /* HGPDFKit-Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +118,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = HackingGate;
 				TargetAttributes = {
 					760B0C682185747800D72E95 = {
@@ -135,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 760B0C642185747800D72E95 /* Build configuration list for PBXProject "HGPDFKit" */;
+			buildConfigurationList = 760B0C642185747800D72E95 /* Build configuration list for PBXProject "HGPDFKit-Exampe" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -148,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				760B0C682185747800D72E95 /* HGPDFKit */,
+				760B0C682185747800D72E95 /* HGPDFKit-Example */,
 			);
 		};
 /* End PBXProject section */
@@ -173,15 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76D722AA2185EC15002FCD8F /* UIView+Extension.swift in Sources */,
 				760B0C8421857C2200D72E95 /* BookshelfViewController.swift in Sources */,
-				76D722AD2185EC15002FCD8F /* PDFView+RTL.swift in Sources */,
 				760B0C6D2185747800D72E95 /* AppDelegate.swift in Sources */,
-				76D722A92185EC15002FCD8F /* PDFView+ScaleFactor.swift in Sources */,
 				760B0C8C2185813000D72E95 /* BookViewController.swift in Sources */,
-				76D722AB2185EC15002FCD8F /* PDFView+Zoom.swift in Sources */,
 				760B0C8721857CDD00D72E95 /* BookshelfCell.swift in Sources */,
-				76D722AC2185EC15002FCD8F /* PDFView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +220,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -294,6 +282,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -329,13 +318,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77CB32R5F4;
-				INFOPLIST_FILE = HGPDFKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				INFOPLIST_FILE = "HGPDFKit-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackinggate.HGPDFKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackinggate.HGPDFKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,13 +337,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77CB32R5F4;
-				INFOPLIST_FILE = HGPDFKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				INFOPLIST_FILE = "HGPDFKit-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackinggate.HGPDFKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackinggate.HGPDFKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,7 +353,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		760B0C642185747800D72E95 /* Build configuration list for PBXProject "HGPDFKit" */ = {
+		760B0C642185747800D72E95 /* Build configuration list for PBXProject "HGPDFKit-Exampe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				760B0C792185747A00D72E95 /* Debug */,
@@ -373,7 +362,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		760B0C7B2185747A00D72E95 /* Build configuration list for PBXNativeTarget "HGPDFKit" */ = {
+		760B0C7B2185747A00D72E95 /* Build configuration list for PBXNativeTarget "HGPDFKit-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				760B0C7C2185747A00D72E95 /* Debug */,
@@ -383,6 +372,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7FB7AEE25D8264000242801 /* HGPDFKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HGPDFKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 760B0C612185747800D72E95 /* Project object */;
 }

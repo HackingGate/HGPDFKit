@@ -32,13 +32,13 @@
         <!--PDFs-->
         <scene sceneID="sQZ-N7-8vE">
             <objects>
-                <tableViewController id="qY0-RA-XNU" customClass="BookshelfViewController" customModule="HGPDFKit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="qY0-RA-XNU" customClass="BookshelfViewController" customModule="HGPDFKit-Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" id="pdz-b8-q9l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="72" id="nSr-b8-TDb" customClass="BookshelfCell" customModule="HGPDFKit" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="72" id="nSr-b8-TDb" customClass="BookshelfCell" customModule="HGPDFKit-Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nSr-b8-TDb" id="oLZ-Sf-AAe">
@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="516" y="135.38230884557723"/>
         </scene>
-        <!--HGPDFKit-->
+        <!--HGPDFKit-Example-->
         <scene sceneID="78h-Lb-Wfm">
             <objects>
-                <viewController id="kgU-Hd-hda" customClass="BookViewController" customModule="HGPDFKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kgU-Hd-hda" customClass="BookViewController" customModule="HGPDFKit-Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rcP-5H-uNl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,7 +121,7 @@
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="8ZW-36-DmM"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="HGPDFKit" id="HsZ-4a-3yb">
+                    <navigationItem key="navigationItem" title="HGPDFKit-Example" id="HsZ-4a-3yb">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="Sxy-nR-Dnu">
                             <connections>
                                 <action selector="changeReadingDirection" destination="kgU-Hd-hda" id="o1Z-Cm-9Vf"/>
