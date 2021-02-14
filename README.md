@@ -44,6 +44,16 @@ pdfView.isViewTransformedForRTL
 iOS 11.3  
 Swift 4
 
+## Example
+
+#### CocoaPods
+
+Run `pod try HGPDFKit`.
+
+#### SwiftPM
+
+Clone the project and open Example folder.
+
 ## Acknowledgement 
 
 #### BookReader
