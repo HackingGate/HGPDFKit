@@ -45,6 +45,10 @@ class BookViewController: UIViewController {
         
         setPDFThumbnailView()
         
+        // Gesture for hide navigationBar and toolbar
+        navigationController?.hidesBarsOnTap = true
+        navigationController?.barHideOnTapGestureRecognizer.require(toFail: doubleTapGesture)
+        
         // HGPDFKit-Example
         pdfView.scrollView?.contentInsetAdjustmentBehavior = .scrollableAxes
         pdfView.getScaleFactorForSizeToFit()
@@ -65,6 +69,13 @@ class BookViewController: UIViewController {
             pdfThumbnailView.topAnchor.constraint(equalTo: margins.topAnchor).isActive = true
             pdfThumbnailView.bottomAnchor.constraint(equalTo: margins.bottomAnchor).isActive = true
         }
+    }
+    
+    // MARK: - Gestures
+    
+    @objc func barHideOnTapGestureRecognizerHandler() {
+        navigationController?.setToolbarHidden(navigationController?.isNavigationBarHidden == true, animated: true)
+        setNeedsUpdateOfHomeIndicatorAutoHidden()
     }
     
     // MARK: - Auto zoom
